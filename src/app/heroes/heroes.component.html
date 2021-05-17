@@ -1,2 +1,9 @@
-<li>{{ hero1 }}</li>
-<li>{{ hero2 }}</li>
+<h2>{{ hero.name | uppercase }}</h2>
+<div>{{ hero.id }}</div>
+<div>{{ hero.name }}</div>
+<div>
+  <div>
+    <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+</div>
