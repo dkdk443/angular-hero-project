@@ -13,13 +13,7 @@ export class HeroesComponent implements OnInit {
     name: 'Yamada'
   }
 
-  selectedHero: Hero;
-
   heroes = HEROES;
-  onSelect(hero: Hero):void {
-    this.selectedHero = hero;
-    console.log(this.selectedHero);
-  }
 
   constructor() { }
 
